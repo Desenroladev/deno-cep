@@ -42,10 +42,37 @@ cep.find('60720000')
 
 ### CEP não localizado
 
+``` ts
+import { Cep } from 'https://raw.githubusercontent.com/Desenroladev/deno-cep/master/mod.ts'
+
+const cep = new Cep();
+
+cep.find('00000000')
+  .catch(err => console.log(err));
+```
+#### Resposta
+```yaml
+{
+
+}
+```
 
 ### CEP no formato inválido
 
+``` ts
+import { Cep } from 'https://raw.githubusercontent.com/Desenroladev/deno-cep/master/mod.ts'
 
+const cep = new Cep();
+
+cep.find('00.000-000')
+  .catch(err => console.log(err));
+```
+#### Resposta
+```yaml
+{
+
+}
+```
 
 ## Autor
 [<img src="https://avatars0.githubusercontent.com/u/20977759?s=96&v=4"><br><sub>@antonielliimma</sub>](https://github.com/antonielliimma) 
