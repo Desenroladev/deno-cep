@@ -14,7 +14,7 @@
 
 
 
-### Cunsultando um CEP
+### Consultando um CEP
 
 ``` ts
 import { Cep } from 'https://raw.githubusercontent.com/Desenroladev/deno-cep/master/mod.ts'
@@ -24,6 +24,9 @@ const cep = new Cep();
 cep.find('60720000')
   .then(res => console.log(res))
   .catch(err => console.log(err));
+```
+### Resposta
+```json
 {
   cep: "60720000",
   logradouro: "Avenida General Osório de Paiva",
