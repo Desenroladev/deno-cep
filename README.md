@@ -46,5 +46,5 @@ cep.find('60720000')
 
 ## Autor
 
-| [<img src="https://avatars3.githubusercontent.com/u/20977759?s=460&u=7cd7d8a26d6f861a4f9072cf4fe58e491f5cedbb&v=3&s115"><br><sub>@antonielliimma</sub>](https://github.com/antonielliimma) |
+| [<img src="https://avatars0.githubusercontent.com/u/20977759?s=96&v=4"><br><sub>@antonielliimma</sub>](https://github.com/antonielliimma) |
 | :---: |
