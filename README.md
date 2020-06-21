@@ -25,8 +25,8 @@ cep.find('60720000')
   .then(res => console.log(res))
   .catch(err => console.log(err));
 ```
-### Resposta
-```json
+#### Resposta
+```yaml
 {
   cep: "60720000",
   logradouro: "Avenida General Osório de Paiva",
