@@ -7,7 +7,7 @@ class ViaCep {
         this.url = `https://viacep.com.br/`
     }
 
-    async find(cep: string) {
+    async find(cep: string | number) {
 
         const url = `${this.url}/ws/${cep}/json`;
 
@@ -16,10 +16,14 @@ class ViaCep {
             let response = await fetch(url);
 
             if (!response.ok) {
-                return Error(`Erro ao busca o cep.`);
+                throw new Error(`Ops, não foi possivel se conectar ao ViaCep.`);
             }
 
             let content = await response.json();
+
+            if(content.erro) {
+                throw new Error(`Ops, CEP não localizado no ViaCep`);
+            }
 
             content.cep = content.cep.replace('-', '');
             if(content.gia == '') {
@@ -43,7 +47,6 @@ class ViaCep {
             return content;
 
         } catch (err) {
-            console.log(err.stack);
             throw err;
         }
 
