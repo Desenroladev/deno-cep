@@ -17,7 +17,7 @@
 ### Consultando um CEP
 
 ``` ts
-import { Cep } from 'https://raw.githubusercontent.com/Desenroladev/deno-cep/master/mod.ts'
+import { Cep } from 'https://deno.land/x/cep/mod.ts'
 
 const cep = new Cep();
 
@@ -43,7 +43,7 @@ cep.find('60720000')
 ### CEP não localizado
 
 ``` ts
-import { Cep } from 'https://raw.githubusercontent.com/Desenroladev/deno-cep/master/mod.ts'
+import { Cep } from 'https://deno.land/x/cep/mod.ts'
 
 const cep = new Cep();
 
@@ -60,7 +60,7 @@ cep.find('00000000')
 ### CEP no formato inválido
 
 ``` ts
-import { Cep } from 'https://raw.githubusercontent.com/Desenroladev/deno-cep/master/mod.ts'
+import { Cep } from 'https://deno.land/x/cep/mod.ts'
 
 const cep = new Cep();
 
